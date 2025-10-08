@@ -1,7 +1,10 @@
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
+#include "PhoneBook.hpp"
+#include "Contact.hpp"
 #include <string>
+
 
 class Contact {
 	private:
@@ -10,9 +13,8 @@ class Contact {
 		std::string nickname;
 		std::string phone_number;
 		std::string darkset;
-
 	public:
-		void	setContact(void);
+		void	setContact(std::string fn, std::string ln, std::string nm, std::string pn, std::string ds);
 };
 
 #endif

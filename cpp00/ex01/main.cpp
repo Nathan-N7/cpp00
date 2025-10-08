@@ -1,14 +1,13 @@
-#include "main.h"
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
 
 int	main() {
 	std::string option;
-	Contact contato;
+	PhoneBook agenda;
 	while (1) {
 		std::getline(std::cin, option);
 		if (option == "ADD") {
-			contato.setContact();
+			agenda.addContact();
 		}
 		else if (option == "SEARCH") {
 
