@@ -8,17 +8,22 @@ PhoneBook::PhoneBook() {
 
 void    PhoneBook::searchContact() {
     int i;
-    
+    std::string tmp;
+
     if (count == 0) {
-        std::cout << "no contacts saved" <<  std::endl;
+        std::cout << "no contacts saved!" <<  std::endl;
         return;
     }
     for(i = 0; i < count; i++)
         contacts[i].display(i);
     std::cout << "Enter index for view details: ";
-    std::cin >> i;
-    if (std::cin.fail() || i <= 0 || i > count) {
-        std::cin.clear();
+    std::getline (std::cin, tmp);
+    if (tmp.empty()) {
+        std::cout << "invalid index!" << std::endl;
+        return;
+    }
+    std::stringstream ss(tmp);
+    if (!(ss >> i) || !(ss.eof()) || i <= 0 || i > count) {
         std::cout << "invalid index!" << std::endl;
         return;
     }
@@ -44,7 +49,7 @@ void    PhoneBook::addContact() {
 		std::getline (std::cin, phone_number);
     } while (phone_number.empty() || phone_number.find_first_not_of(" \t"));
 	do {
-        std::cout << "darkset: ";
+        std::cout << "darkest secret: ";
 		std::getline(std::cin, darkset);
     } while (darkset.empty() || darkset.find_first_not_of(" \t"));
     contacts[index].setContact(first_name, last_name, nickname, phone_number, darkset);

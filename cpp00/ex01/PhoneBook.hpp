@@ -6,6 +6,7 @@
 #include <string>
 #include <iostream>
 #include <limits>
+#include <sstream>
 
 class PhoneBook {
 	private:

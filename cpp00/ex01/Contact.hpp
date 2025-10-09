@@ -12,7 +12,7 @@ class Contact {
 		std::string last_name;
 		std::string nickname;
 		std::string phone_number;
-		std::string darkset;
+		std::string darkest;
 	public:
 		void	setContact(std::string fn, std::string ln, std::string nm, std::string pn, std::string ds);
 		void	displayfull();

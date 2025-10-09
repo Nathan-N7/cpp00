@@ -6,7 +6,7 @@ void	Contact::setContact(std::string fn, std::string ln, std::string nm, std::st
     last_name = ln;
     nickname = nm;
     phone_number = pn;
-    darkset = ds;
+    darkest = ds;
 }
 
 std::string transform(std::string str) {
@@ -36,5 +36,5 @@ void    Contact::displayfull()
     std::cout << "Last name: " << last_name << std::endl;
     std::cout << "Nickname: " << nickname << std::endl;
     std::cout << "Phone nummber: " << phone_number << std::endl;
-    std::cout << "Darkest: " << darkset << std::endl;
+    std::cout << "Darkest secret: " << darkest << std::endl;
 }
