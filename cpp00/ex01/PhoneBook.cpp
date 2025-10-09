@@ -19,11 +19,9 @@ void    PhoneBook::searchContact() {
     std::cin >> i;
     if (std::cin.fail() || i <= 0 || i > count) {
         std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "invalid index!" << std::endl;
         return;
     }
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     contacts[i - 1].displayfull();
 }
 
