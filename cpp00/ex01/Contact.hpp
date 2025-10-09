@@ -15,6 +15,8 @@ class Contact {
 		std::string darkset;
 	public:
 		void	setContact(std::string fn, std::string ln, std::string nm, std::string pn, std::string ds);
+		void	displayfull();
+		void	display(int index);
 };
 
 #endif

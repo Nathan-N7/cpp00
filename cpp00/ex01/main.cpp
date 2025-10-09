@@ -10,7 +10,7 @@ int	main() {
 			agenda.addContact();
 		}
 		else if (option == "SEARCH") {
-
+			agenda.searchContact();
 		}
 		else if (option == "EXIT") {
 			break;
