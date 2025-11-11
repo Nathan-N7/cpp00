@@ -1,8 +1,8 @@
-NAME = harl
+NAME = fixed
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Harl.cpp main.cpp
-LIB = Harl.hpp
+SRCS = Fixed.cpp main.cpp
+LIB = Fixed.hpp
 
 OBJS = $(SRCS:.cpp=.o)
 

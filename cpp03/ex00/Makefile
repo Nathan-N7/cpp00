@@ -1,8 +1,8 @@
-NAME = harl
+NAME = claptrap
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Harl.cpp main.cpp
-LIB = Harl.hpp
+SRCS = ClapTrap.cpp main.cpp
+LIB = Claptrap.hpp
 
 OBJS = $(SRCS:.cpp=.o)
 

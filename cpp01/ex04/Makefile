@@ -1,5 +1,5 @@
 NAME = replace
-CC = g++
+CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = Replace.cpp main.cpp
 LIB = Replace.hpp
